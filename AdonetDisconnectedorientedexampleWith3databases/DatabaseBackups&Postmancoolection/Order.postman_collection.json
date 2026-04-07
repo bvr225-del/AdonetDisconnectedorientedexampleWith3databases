@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "b75a4777-1eb6-44ce-8fc7-b001c5d64c55",
+    "name": "Order",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53440198",
+    "_collection_link": "https://go.postman.co/collection/53440198-b75a4777-1eb6-44ce-8fc7-b001c5d64c55?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetOrders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5108/api/Order/GetOrder",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Order",
+            "GetOrder"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetOrderById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5108/api/Order/GetOrdersbyId?OrderId=2004",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Order",
+            "GetOrdersbyId"
+          ],
+          "query": [
+            {
+              "key": "OrderId",
+              "value": "2004"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddOrders",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateOrders",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"orderId\": 2007,\r\n  \"orderName\": \"Apple Laptap123\",\r\n  \"orderLocation\": \"bangalore123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5108/api/Order/UpdateOrder",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Order",
+            "UpdateOrder"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteOrders",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "info": {
+    "_postman_id": "16feb253-c0c1-4fb2-8969-569cdc8cc13e",
+    "name": "Restaurant",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53440198",
+    "_collection_link": "https://go.postman.co/collection/53440198-16feb253-c0c1-4fb2-8969-569cdc8cc13e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetallRestaurants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5108/api/Restaurant/GetallRestaurants",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Restaurant",
+            "GetallRestaurants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetRestaurantById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5108/api/Restaurant/GetRestaurantById/6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Restaurant",
+            "GetRestaurantById",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateRestaurant",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\"id\": 1,\r\n    \"restaurantName\": \"Paradise123\",\r\n    \"restaurantLocation\": \"Hyderabad\",\r\n    \"creationDate\": \"05-04-2026 17:25:22\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5108/api/Restaurant/UpdateRestaurant",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5108",
+          "path": [
+            "api",
+            "Restaurant",
+            "UpdateRestaurant"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "AddRestaurant",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

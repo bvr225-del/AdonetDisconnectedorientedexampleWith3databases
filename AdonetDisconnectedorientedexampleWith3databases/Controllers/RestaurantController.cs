@@ -62,7 +62,7 @@ namespace AdonetDisconnectedorientedexampleWith3databases.Controllers
             }
         }
         [HttpGet]
-        [Route("GetallRestaurants()")]
+        [Route("GetallRestaurants")]
         public async Task<IActionResult> GetallRestaurants()
         {
             try
